@@ -20,6 +20,7 @@ from django.urls import include
 
 urlpatterns = [
     path('',views.index,name='index'),
+    path('rango/about/',views.about,name='about'),
     path('admin/', admin.site.urls),
     path('rango/',include('rango.urls'))
 ]
